@@ -57,7 +57,7 @@
   }
     
   header {
-    padding: 3em var(--espacamento-horizontal);
+    padding: 3em  var(--espacamento-horizontal);
     background-color: transparent;
   }
   
@@ -151,17 +151,27 @@
   ul, p {
     color: var(--cinza-azulado);
   }
-  
-  #beneficios ul {
+
+  .beneficios-lista {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1em;
+    gap: 1.5em;
     padding-left: 0;
     list-style: none;
   }
+
+  .beneficios-lista li {
+    display: flex;
+    align-items: center;
+    gap: 0.8em;
+    color: var(--cinza-azulado);
+  }
   
-  #beneficios li::before {
-    content: '✅ ';
+  .beneficios-lista li img {
+    width: 56px;
+    height: 56px;
+    flex-shrink: 0;
+    margin-top: 0.1em;
   }
   
   blockquote {
@@ -245,5 +255,11 @@
 @media (max-width: 500px) {
     .preco-box div {
       min-width: 150px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .beneficios-lista {
+      grid-template-columns: repeat(2, 1fr);
     }
   }
