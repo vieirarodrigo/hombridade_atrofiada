@@ -225,6 +225,12 @@
     margin-bottom: 1em;
     font-family: var(--fonte-secundaria);
   }  
+
+  #faq a {
+    color: inherit;
+    text-decoration: none;
+    font-weight: normal;
+  }
   
   footer {
     text-align: center;
@@ -233,6 +239,8 @@
     color: var(--cinza-azulado);
     border-top: 1px solid #23344c;
   }
+
+  
   
   @media (max-width: 768px) {
 
